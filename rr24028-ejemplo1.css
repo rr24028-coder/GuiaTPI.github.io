@@ -4,3 +4,12 @@ ficha {background-color:red; display:block;}
 nombre {color:white; display:inline;} 
 apellido {color:yellow; display:inline;}
 direccion {color:yellow; font-size:1cm; display:none;}
+
+navegacion {
+    display: block;
+    margin-top: 20px;
+    background-color: white; /* Fondo blanco para que el enlace azul sea visible */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
