@@ -1,0 +1,109 @@
+/* rr24028-ejercicio1a.css RR24028 */
+
+fichero {
+    display: block;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+ficha {
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50; /* Borde verde para diferenciar cada ficha */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Extraer atributos id y fechaingreso de la ficha */
+ficha::before {
+    content: "Ficha ID: " attr(id) " | Ingreso: " attr(fechaingreso);
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+nombre, apellido {
+    display: inline;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+apellido::before {
+    content: " "; /* Agrega un espacio entre el nombre y el apellido */
+}
+
+direccion {
+    display: block;
+    color: #555;
+    margin-top: 5px;
+}
+
+direccion::before {
+    content: "Dirección: ";
+    font-weight: bold;
+}
+
+/* --- FORMATO PARA LOS DATOS AGREGADOS EN EL EJERCICIO 1A --- */
+
+contacto {
+    display: block;
+    margin-top: 15px;
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Extraer el atributo email de la etiqueta contacto */
+contacto::before {
+    content: "Email: " attr(email);
+    display: block;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+telefonos {
+    display: block;
+}
+
+telefono {
+    display: block;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+/* Extraer el atributo tipo (celular/fijo) de la etiqueta telefono */
+telefono::before {
+    content: "Tel (" attr(tipo) "): ";
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+website {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #1565c0;
+}
+
+/* Extraer el atributo url de la etiqueta website */
+website::before {
+    content: "Sitio Web [URL: " attr(url) "] - ";
+    font-weight: bold;
+    color: #333;
+}
+
+navegacion {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+{
+  "pais": {
+    "@nombre": "El Salvador",
+    "departamento": {
+      "@id": "1",
+      "@nombre": "San Salvador",
+      "cabecera": "San Salvador",
+      "habitantes": "1,700,000",
+      "altura": "545 MSNM"
+    },
+    "navegacion": {
+      "a": {
+        "@xmlns": "http://www.w3.org/1999/xhtml",
+        "@href": "index.html",
+        "#text": "Volver al Menú Principal"
+      }
+    }
+  }
+}

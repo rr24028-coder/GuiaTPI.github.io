@@ -1,0 +1,48 @@
+/* rr24028-ejemplo2.css RR24028 */
+
+pais {
+    display: block;
+    background-color: #f0f8ff; /* Azul muy claro */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Selector avanzado CSS3 para mostrar el atributo 'nombre' de la etiqueta pais */
+pais::before {
+    content: "País: " attr(nombre);
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0056b3;
+}
+
+departamento {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* Selector avanzado CSS3 para extraer los atributos 'id' y 'nombre' del departamento */
+departamento::before {
+    content: "Departamento " attr(id) ": " attr(nombre);
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+cabecera, habitantes, altura {
+    display: block;
+    margin: 5px 0;
+    color: #444444;
+}
+
+/* Agregamos etiquetas visuales a los elementos para que se entienda qué es cada dato */
+cabecera::before { content: "Cabecera: "; font-weight: bold; color: black; }
+habitantes::before { content: "Habitantes: "; font-weight: bold; color: black; }
+altura::before { content: "Altura: "; font-weight: bold; color: black; }

@@ -1,0 +1,148 @@
+/* rr24028-ejercicio1b.css RR24028 */
+
+fichero {
+    display: block;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+ficha {
+    background-color: #ffffff;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #2196F3; /* Borde azul para diferenciar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ficha::before {
+    content: "Ficha ID: " attr(id) " | Ingreso: " attr(fechaingreso);
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+nombre, apellido {
+    display: inline;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+apellido::before { content: " "; }
+
+direccion {
+    display: block;
+    color: #555;
+    margin-top: 5px;
+}
+
+direccion::before {
+    content: "Dirección: ";
+    font-weight: bold;
+}
+
+contacto {
+    display: block;
+    margin-top: 15px;
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+contacto::before {
+    content: "Email: " attr(email);
+    display: block;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+telefonos { display: block; }
+
+telefono {
+    display: block;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+telefono::before {
+    content: "Tel (" attr(tipo) "): ";
+    font-weight: bold;
+    color: #1565c0;
+}
+
+website {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #1565c0;
+}
+
+website::before {
+    content: "Sitio Web [URL: " attr(url) "] - ";
+    font-weight: bold;
+    color: #333;
+}
+
+/* --- FORMATO PARA LA DOCUMENTACIÓN DEL EJERCICIO 1B --- */
+
+documentacion {
+    display: block;
+    margin-top: 15px;
+    background-color: #fff3e0; /* Fondo naranja claro para diferenciar la sección */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dashed #ff9800;
+}
+
+/* Extraer atributos dui y nit de la etiqueta documentacion */
+documentacion::before {
+    content: "Documentos de Identidad - DUI: " attr(dui) " | NIT: " attr(nit);
+    display: block;
+    font-weight: bold;
+    color: #e65100;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffcc80;
+    padding-bottom: 5px;
+}
+
+isss {
+    display: block;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+/* Extraer el número de afiliación del ISSS */
+isss::before {
+    content: "ISSS (Afiliación: " attr(num_afiliacion) ") - Estado: ";
+    font-weight: bold;
+    color: #e65100;
+}
+
+afp {
+    display: block;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Extraer el NUP y la institución de la AFP */
+afp::before {
+    content: "AFP " attr(institucion) " (NUP: " attr(nup) ") - Estado: ";
+    font-weight: bold;
+    color: #e65100;
+}
+
+navegacion {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}

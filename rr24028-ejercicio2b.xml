@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="rr24028-ejercicio2b.css" ?>
+<!-- ejercicio2b.xml RR24028 -->
+<pais nombre="El Salvador" codigo_area="+503" area_territorial_km2="21041">
+
+  <monedas>
+    <moneda tipo="oficial" ISO="USD">Dólar Estadounidense</moneda>
+    <moneda tipo="legal" ISO="BTC">Bitcoin</moneda>
+  </monedas>
+
+  <idiomas>
+    <idioma tipo="oficial">Español</idioma>
+    <idioma tipo="autoctono">Nahuat</idioma>
+    <idioma tipo="segundo_idioma">Inglés</idioma>
+  </idiomas>
+
+  <!-- Lista de Departamentos reestructurada -->
+  <departamentos>
+    <!-- Departamento 1 (Convertidos 'cabecera', 'habitantes' y 'altura' a atributos) -->
+    <departamento id="1" nombre="San Salvador" cabecera="San Salvador" habitantes="1700000" altura="545 MSNM">
+      <zona>Central</zona>
+      <municipios_destacados>
+        <municipio>San Salvador Centro</municipio>
+        <municipio>Soyapango</municipio>
+      </municipios_destacados>
+    </departamento>
+
+    <!-- Departamento 2 -->
+    <departamento id="2" nombre="Santa Ana" cabecera="Santa Ana" habitantes="570000" altura="665 MSNM">
+      <zona>Occidental</zona>
+      <municipios_destacados>
+        <municipio>Santa Ana Centro</municipio>
+        <municipio>Metapán</municipio>
+      </municipios_destacados>
+    </departamento>
+
+    <!-- Departamento 3 (Ejercicio 2b) -->
+    <departamento id="3" nombre="San Miguel" cabecera="San Miguel" habitantes="480000" altura="110 MSNM">
+      <zona>Oriental</zona>
+      <municipios_destacados>
+        <municipio>San Miguel Centro</municipio>
+        <municipio>Chinameca</municipio>
+      </municipios_destacados>
+    </departamento>
+  </departamentos>
+
+  <!-- Enlace para regresar al index.html -->
+  <navegacion>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="index.html">← Volver al Menú Principal (index.html)</a>
+  </navegacion>
+
+</pais>

@@ -1,0 +1,95 @@
+/* rr24028-ejercicio2b.css RR24028 */
+
+pais {
+    display: block;
+    background-color: #f0f4f8; /* Tono azul grisáceo suave */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Extraer atributos globales del país */
+pais::before {
+    content: "País: " attr(nombre) " | Código Telefónico: " attr(codigo_area) " | Área: " attr(area_territorial_km2) " km²";
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a365d;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2b6cb0;
+    padding-bottom: 10px;
+}
+
+/* --- SECCIONES GENERALES --- */
+monedas, idiomas, departamentos {
+    display: block;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+monedas::before { content: "Monedas Oficiales y Legales"; display: block; font-weight: bold; font-size: 18px; color: #2c5282; margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; }
+idiomas::before { content: "Idiomas Hablados"; display: block; font-weight: bold; font-size: 18px; color: #2c5282; margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; }
+departamentos::before { content: "División Administrativa"; display: block; font-weight: bold; font-size: 18px; color: #2c5282; margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; }
+
+moneda, idioma {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: #4a5568;
+}
+
+/* Extraer los atributos 'tipo' e 'ISO' */
+moneda::before { content: "- Tipo " attr(tipo) " (ISO: " attr(ISO) "): "; font-weight: bold; text-transform: capitalize; }
+idioma::before { content: "- " attr(tipo) ": "; font-weight: bold; text-transform: capitalize; }
+
+/* --- DEPARTAMENTOS REESTRUCTURADOS --- */
+departamento {
+    display: block;
+    background-color: #ebf8ff; /* Fondo azul muy claro para cada departamento */
+    border-left: 5px solid #4299e1;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* AQUÍ ESTÁ LA CLAVE DEL EJERCICIO: Extraer todos los datos que pasamos a atributos */
+departamento::before {
+    content: "Departamento " attr(id) ": " attr(nombre) " | Cabecera: " attr(cabecera) " | Habitantes: " attr(habitantes) " | Altura: " attr(altura);
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 10px;
+}
+
+zona {
+    display: block;
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+zona::before { content: "Zona Geográfica: "; font-weight: bold; font-style: normal; }
+
+municipios_destacados {
+    display: block;
+    margin-left: 15px;
+}
+
+municipios_destacados::before { content: "Municipios Destacados:"; display: block; font-weight: bold; font-size: 14px; margin-bottom: 5px; }
+
+municipio {
+    display: list-item; /* Muestra como viñeta */
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #2d3748;
+}
+
+navegacion {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}

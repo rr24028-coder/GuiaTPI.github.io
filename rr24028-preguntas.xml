@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="rr24028-preguntas.css" ?>
+<!-- rr24028-preguntas.xml RR24028 -->
+<documento_preguntas>
+    
+    <encabezado carnet="RR24028" nombre="David Alexander Rivas Rivas" materia="TPI-115" />
+
+    <titulo>Respuestas a Preguntas de Reflexión de la Guía L-3.1</titulo>
+
+    <seccion_respuestas>
+        <item id="1">
+            <interrogante>¿A partir del ejemplo 1 y ejercicios desarrollados hasta el momento qué puede concluir?</interrogante>
+            <conclusion>Concluyo que XML nos da libertad total para inventar nuestras propias etiquetas según lo que necesitemos representar. Sin embargo, exige una sintaxis muy estricta para que el documento esté "bien formado"; si olvidamos cerrar una etiqueta o cruzamos el anidamiento, el documento se vuelve inválido.</conclusion>
+        </item>
+
+        <item id="2">
+            <interrogante>¿A partir del ejemplo 2 y ejercicios desarrollados hasta el momento qué puede concluir?</interrogante>
+            <conclusion>Aprendí que el uso lógico de los atributos ayuda a mantener el código mucho más limpio. Es importante saber qué datos deben ser elementos (como el nombre de un municipio) y cuáles atributos (como unidades de medida o identificadores únicos), para evitar repetición innecesaria y mejorar la lectura de los datos.</conclusion>
+        </item>
+
+        <item id="3">
+            <interrogante>¿A partir de los ejercicios desarrollados en la sección II.3 (JSON) qué puede concluir?</interrogante>
+            <conclusion>Pude comprobar que tanto XML como JSON sirven para estructurar datos, pero JSON es mucho más ligero y directo. Al usar la consola de JavaScript, se nota que JSON es el formato nativo ideal para trabajar con código web, haciendo que convertir y manipular objetos sea un proceso muy rápido.</conclusion>
+        </item>
+
+        <item id="4">
+            <interrogante>¿A partir de los ejemplos/ejercicios CSS desarrollados, qué puede concluir?</interrogante>
+            <conclusion>Lo más destacable es que la presentación visual (CSS) y los datos (XML) están totalmente separados. Además, aprendí que los datos guardados en atributos no se muestran por defecto en el navegador, pero usando selectores avanzados de CSS3 (como content y attr) podemos rescatarlos y mostrarlos en pantalla perfectamente integrados al diseño.</conclusion>
+        </item>
+    </seccion_respuestas>
+
+    <navegacion>
+        <a xmlns="http://www.w3.org/1999/xhtml" href="index.html">Volver al Menú Principal (index.html)</a>
+    </navegacion>
+
+</documento_preguntas>

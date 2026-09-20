@@ -1,0 +1,81 @@
+/* rr24028-ejercicio2a.css RR24028 */
+
+pais {
+    display: block;
+    background-color: #f7f9fc;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Extraer atributos nombre, codigo_area y area_territorial_km2 de la etiqueta pais */
+pais::before {
+    content: "País: " attr(nombre) " | Código: " attr(codigo_area) " | Área: " attr(area_territorial_km2) " km²";
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #34495e;
+    padding-bottom: 10px;
+}
+
+/* --- FORMATO PARA MONEDAS E IDIOMAS --- */
+monedas, idiomas {
+    display: block;
+    background-color: #e8f6f3;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #1abc9c;
+}
+
+monedas::before { content: "Monedas:"; display: block; font-weight: bold; margin-bottom: 5px; color: #16a085; }
+idiomas::before { content: "Idiomas:"; display: block; font-weight: bold; margin-bottom: 5px; color: #16a085; }
+
+moneda, idioma {
+    display: block;
+    margin-left: 15px;
+    color: #333;
+}
+
+/* Extraer el atributo 'tipo' de cada moneda e idioma */
+moneda::before { content: "- " attr(tipo) ": "; font-weight: bold; text-transform: capitalize; }
+idioma::before { content: "- " attr(tipo) ": "; font-weight: bold; text-transform: capitalize; }
+
+/* --- FORMATO PARA DEPARTAMENTOS --- */
+departamento {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Extraer los atributos 'id' y 'nombre' del departamento */
+departamento::before {
+    content: "Departamento " attr(id) ": " attr(nombre);
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #bdc3c7;
+    padding-bottom: 5px;
+}
+
+cabecera, habitantes, altura {
+    display: block;
+    margin: 5px 0 5px 10px;
+    color: #444;
+}
+
+cabecera::before { content: "Cabecera: "; font-weight: bold; }
+habitantes::before { content: "Habitantes: "; font-weight: bold; }
+altura::before { content: "Altura: "; font-weight: bold; }
+
+navegacion {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}

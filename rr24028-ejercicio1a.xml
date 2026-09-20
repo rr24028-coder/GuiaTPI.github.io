@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="rr24028-ejercicio1a.css" ?>
+<!-- ejercicio1a.xml RR24028 -->
+<fichero>
+  <!-- Primera ficha (basada en el Ejemplo 1) -->
+  <ficha id="1" fechaingreso="1/11/2012">
+    <nombre>Antonio</nombre>
+    <apellido>Barbero</apellido>
+    <direccion>Calle de Los Andes, 45</direccion>
+  </ficha>
+
+  <!-- Segunda ficha (Ejercicio 1a: con datos creativos de teléfono, email y website) -->
+  <ficha id="2" fechaingreso="10/02/2024">
+    <nombre>David</nombre>
+    <apellido>Alexander</apellido>
+    <direccion>Avenida Universitaria, 123</direccion>
+    <contacto email="david.alexander@estudiantec.edu.sv">
+      <telefonos>
+        <telefono tipo="celular">7000-0000</telefono>
+        <telefono tipo="fijo">2200-0000</telefono>
+      </telefonos>
+      <website url="https://davidalexander.github.io">Mi Sitio Personal</website>
+    </contacto>
+  </ficha>
+
+  <!-- Enlace para regresar al index.html -->
+  <navegacion>
+    <a xmlns="http://www.w3.org/1999/xhtml" href="index.html">← Volver al Menú Principal (index.html)</a>
+  </navegacion>
+</fichero>

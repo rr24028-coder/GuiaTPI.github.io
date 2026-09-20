@@ -1,0 +1,90 @@
+{
+  "pais": {
+    "@nombre": "El Salvador",
+    "@codigo_area": "+503",
+    "@area_territorial_km2": "21041",
+    "monedas": {
+      "moneda": [
+        {
+          "@tipo": "oficial",
+          "@ISO": "USD",
+          "#text": "Dólar Estadounidense"
+        },
+        {
+          "@tipo": "legal",
+          "@ISO": "BTC",
+          "#text": "Bitcoin"
+        }
+      ]
+    },
+    "idiomas": {
+      "idioma": [
+        {
+          "@tipo": "oficial",
+          "#text": "Español"
+        },
+        {
+          "@tipo": "autoctono",
+          "#text": "Nahuat"
+        },
+        {
+          "@tipo": "segundo_idioma",
+          "#text": "Inglés"
+        }
+      ]
+    },
+    "departamentos": {
+      "departamento": [
+        {
+          "@id": "1",
+          "@nombre": "San Salvador",
+          "@cabecera": "San Salvador",
+          "@habitantes": "1700000",
+          "@altura": "545 MSNM",
+          "zona": "Central",
+          "municipios_destacados": {
+            "municipio": [
+              "San Salvador Centro",
+              "Soyapango"
+            ]
+          }
+        },
+        {
+          "@id": "2",
+          "@nombre": "Santa Ana",
+          "@cabecera": "Santa Ana",
+          "@habitantes": "570000",
+          "@altura": "665 MSNM",
+          "zona": "Occidental",
+          "municipios_destacados": {
+            "municipio": [
+              "Santa Ana Centro",
+              "Metapán"
+            ]
+          }
+        },
+        {
+          "@id": "3",
+          "@nombre": "San Miguel",
+          "@cabecera": "San Miguel",
+          "@habitantes": "480000",
+          "@altura": "110 MSNM",
+          "zona": "Oriental",
+          "municipios_destacados": {
+            "municipio": [
+              "San Miguel Centro",
+              "Chinameca"
+            ]
+          }
+        }
+      ]
+    },
+    "navegacion": {
+      "a": {
+        "@xmlns": "http://www.w3.org/1999/xhtml",
+        "@href": "index.html",
+        "#text": "← Volver al Menú Principal (index.html)"
+      }
+    }
+  }
+}
